@@ -1,0 +1,90 @@
+
+
+/* MovieDetails.css */
+.movie-details {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  height: 50vh; /* Set a specific height value */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: 'helvetica';
+}
+
+.star-wars-title {
+  font-size: 16px; /* Smaller font size for "Star Wars" */
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  font-family: 'serif';
+  font-size: 36px;
+  background: linear-gradient(180deg,rgb(233, 233, 233),rgb(233, 233, 233),rgb(228, 204, 144));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.border-text {
+
+  padding:0;
+  font-size: 50px;
+  border-top: 2px solid rgb(233, 233, 233); /* Top border */
+  border-bottom: 1px solid rgb(228, 204, 144); /* Bottom border */
+  border-left: none;
+  border-right: none;
+  text-transform: uppercase;
+}
+
+legend {
+  font-size: 10px;
+  font-weight: 900;
+  color: white; /* Bright white gold */
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.roman-numerals {
+  font-family: 'serif';
+  font-weight: bold;
+}
+
+
+.title-details{
+  font-size: 3rem;
+  line-height: 0.9;
+  font-weight: 700;
+
+}
+
+.movie-details button {
+  background-color: #FFD700; /* Bright white gold */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.bottom-title{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color:rgb(228, 204, 144);
+  /* text-align: justify;
+	text-align-last: justify; */
+	letter-spacing: 0.2rem;
+}
+.episode-box{
+  width:auto;
+}
+.details-left{
+  width:300px;
+}

@@ -1,0 +1,16 @@
+/* .movie-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto; 
+} */
+
+.movie-list {
+  display: flex;
+  width: auto; /* Allow items to expand horizontally */
+  align-items: center;
+  /* max-width: 1200px; */
+  justify-content: space-between; 
+  height:35vh;
+
+}

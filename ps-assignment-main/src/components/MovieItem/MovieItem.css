@@ -1,0 +1,35 @@
+.movie-item {
+  position: relative;
+  width: 16%; /* Set the width according to your design */
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Center the title at the bottom */
+  border-radius: 10px; /* Rounded borders */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie-button {
+  background: rgba(255, 255, 255, 0.3); /* White background with 30% opacity */
+  border: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  border-top: 2px solid white; /* Optional border at the top */
+}
+
+.movie-title {
+  color: white;
+  background: rgba(255, 255, 255, 0.3); /* Light background with 30% opacity */
+  padding: 10px; /* Padding for the background */
+  text-align: center; /* Center the title text */
+  border-radius: 10px; /* Rounded background box */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Add any additional styling or adjustments as needed */
