@@ -1,10 +1,10 @@
 import React from 'react';
-import myImage from '../../bg.jpg';
+// import myImage from '../../bg.jpg';
 import './MovieItem.css';
 
-function MovieItem({ movie, onMovieSelect }) {
+function MovieItem({ movie, onMovieSelect,movieImage }) {
   const backgroundStyle = {
-    backgroundImage: `url(${myImage})`,
+    backgroundImage: `url(${movieImage})`,
   };
 
   return (

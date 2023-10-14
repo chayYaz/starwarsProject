@@ -3,7 +3,7 @@ import { fetchMovies } from '@/services/api';
 import MovieItem from '@/components/MovieItem/MovieItem';
 import Loading from '@/components/Loading/Loading';
 import "./MovieList.css"
-function MovieList({ onMovieSelect }) {
+function MovieList({ onMovieSelect,movieImages }) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -29,9 +29,14 @@ function MovieList({ onMovieSelect }) {
         <Loading message="Loading Movies..." />
       ) : (
         <div className="movie-list">
-          {movies.map((movie) => (
-            <MovieItem key={movie.episode_id} movie={movie} onMovieSelect={onMovieSelect} />
+          {movies.sort((a, b) => a.episode_id - b.episode_id).map((movie) => (
+            <MovieItem key={movie.episode_id} 
+            movie={movie} 
+            onMovieSelect={onMovieSelect} 
+            movieImage={movieImages[movie.episode_id]}/>
+            
           ))}
+          
         </div>
       )
     //}

@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import './MovieDetails.css'; // Import your CSS file
-import myImage from '../../bg.jpg';
+// import myImage from '../../bg.jpg';
 import { arabicToRoman } from '../../Utils/RomanNumbers';
-function MovieDetails({ movie, onFavoriteToggle, favorites }) {
+function MovieDetails({ movie, onFavoriteToggle, favorites ,movieImage}) {
   const backgroundImageStyle = {
-    backgroundImage: `url(${myImage})`, // Set the background image
+    backgroundImage: `url(${movieImage})`, // Set the background image
+  zIndex:-2
   };
 
   return movie ? (
 <div className="movie-details" style={backgroundImageStyle}>
-  <div className='details-left'>
+<button onClick={() => onFavoriteToggle(movie)}>
+        {favorites.some((fav) => fav.episode_id === movie.episode_id) ? 'Dislike' : 'Like'}
+      </button>
+  <div className='details-right'>
     <h2 className='title-details'>{movie.title}</h2>
     <div className='episode-box'>
       <fieldset class="border-text gradient-text">
@@ -19,9 +23,7 @@ function MovieDetails({ movie, onFavoriteToggle, favorites }) {
       <div className='bottom-title'>{movie.title}</div>
     </div>
   </div>
-      <button onClick={() => onFavoriteToggle(movie)}>
-        {favorites.some((fav) => fav.episode_id === movie.episode_id) ? 'Dislike' : 'Like'}
-      </button>
+     
 </div>
   ) : null;
 }
