@@ -17,23 +17,11 @@ These instructions will help you set up the project locally on your machine.
 
 ### Installing
 
-1. Unzip the project.
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd star-wars-favorites
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm start
+git clone https://github.com/chayYaz/starwarsProject.git  
+cd starwarsproject
+cd ps-assignment-main
+npm install
+npm start
    ```
 
 The application should now be running on [http://localhost:3000/](http://localhost:3000/).
