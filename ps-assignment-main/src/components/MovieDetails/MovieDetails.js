@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import './MovieDetails.css';
-import { FaStar, FaHeart } from 'react-icons/fa';
+import { FaStar} from 'react-icons/fa';
 import { arabicToRoman } from '../../Utils/RomanNumbers';
 
 

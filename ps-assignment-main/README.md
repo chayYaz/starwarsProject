@@ -61,6 +61,10 @@ Please notice the the SWAPI API might take some time to respond
    the function prop was not passed to moviedetails properly.
    this is the solution to the problem:
    <MovieDetails movie={selectedMovie} favorites={favorites} onFavoriteToggle={handleFavorite}/>
+   additional problems:
+   mockup did not have buttton
+   images were not in the html
+   star/heart did not appear in html/js
 2. **Styling:**
 
    - Refactor the application's styling to match the provided [mockup](page_mockup.png)
@@ -69,6 +73,11 @@ Please notice the the SWAPI API might take some time to respond
 3. **Improvements:** (Optional)
 
    - After implementation of the basic design, you can go ahead and implement any other enhancements or features you feel would optimize the application.
+     The things i changed:
+     adding black gradient instead of white blur in movieitems
+     adding black gradient above background image in moviedetails
+     font family
+     changing star to be filled in
 
 4. **Upload to github:**
    - Once finished, upload the project to github.

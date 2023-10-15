@@ -26,8 +26,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  font-family: 'helvetica';
+  font-family: 'Orbitron', sans-serif;
 }
 
 .star-wars-title {
@@ -55,7 +54,7 @@
 }
 
 legend {
-  font-family: 'helvetica';
+  font-family: 'Orbitron', sans-serif;
   font-size: 10px;
   font-weight: 900;
   color: white; /* Bright white gold */
@@ -125,7 +124,7 @@ background-color: #ffe448;
   width:300px;
  margin-left: 0;
  z-index: 5;
- padding-bottom:20px;
+ padding-bottom:40px;
 }
 .favorite-star {
   font-size: 24px; /* Adjust the font size to make it larger */
@@ -139,6 +138,15 @@ background-color: #ffe448;
 }
 .details-left{
   width:80%;
-  font-size:20px ;
+ 
+}
+.title-details{
+  font-size: 2rem;
+}
+.gradient-text{
+  font-size: 1.4rem;
+}
+.bottom-title{
+  font-size: 0.3rem;
 }
 }

@@ -9,11 +9,13 @@ function MovieItem({ movie, onMovieSelect,movieImage }) {
 
   return (
     <div className="movie-item" onClick={() => onMovieSelect(movie)} style={backgroundStyle}>
-      <div className="movie-content">
-        <h2 className="movie-title">{movie.title}</h2>
-       
+    <div className="movie-content">
+      <div className="movie-title-container">
+        <h3>{movie.title}</h3>
       </div>
     </div>
+  </div>
+  
   );
 }
 
