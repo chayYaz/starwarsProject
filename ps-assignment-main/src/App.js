@@ -23,6 +23,7 @@ function App() {
   }, [favorites]);
 
   const handleFavorite = (movie) => {
+   
     if (favorites.some(fav => fav.episode_id === movie.episode_id)) {
       setFavorites(favorites.filter(fav => fav.episode_id !== movie.episode_id));
     } else {
@@ -42,8 +43,13 @@ function App() {
     5: EmpireStrikesBack,
     6: ReturnOfTheJedi,
   };
+  const backgroundImageStyle = {
+    backgroundImage: `url(${movieImages[selectedMovie.episode_id]})`,
+    backgroundSize: 'cover',
+
+  };
   return (
-    <div className="for-background">
+    <div className="for-background" style={backgroundImageStyle}>
     <div className="App">
       <MovieDetails movie={selectedMovie} favorites={favorites} onFavoriteToggle={handleFavorite} movieImage={movieImages[selectedMovie.episode_id]}/>
       <MovieList onMovieSelect={handleMovieSelect} movieImages={movieImages} />

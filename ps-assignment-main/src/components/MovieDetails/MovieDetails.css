@@ -5,9 +5,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient( to left,rgba(0, 0, 0, 1) 20%, transparent);
+  background: linear-gradient( to right,rgba(0, 0, 0, 1) 16%, transparent);
   pointer-events: none; /* Allows clicks to go through the overlay */
   z-index: -1;
+  border-radius: 10px;
 }
 /* MovieDetails.css */
 .movie-details {
@@ -19,7 +20,7 @@
   text-align: center;
   color: white;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -45,9 +46,7 @@
 }
 
 .border-text {
-
   padding:0;
-  font-size: 50px;
   border-top: 2px solid rgb(233, 233, 233); /* Top border */
   border-bottom: 1px solid rgb(228, 204, 144); /* Bottom border */
   border-left: none;
@@ -86,26 +85,31 @@ legend {
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 10px; /* Add border radius */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* Add shadow */
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .movie-details button:hover {
-  
+  background-color: #ffe448;
   transform: scale(1.05); /* Add a slight scale effect on hover and click */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover and click */
   transform: translateY(-2px); /* Add a slight lift on hover */
 }
 
 .movie-details button:active {
+background-color: #ffe448;
   transform: scale(1.05); /* Add a slight scale effect on hover and click */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover and click */
   transform: translateY(2px); /* Add a slight press effect on click */
 }
+.details-right{
+  z-index: 5;
+  position: relative; 
+}
 
 
 .bottom-title{
-  font-size: 14px;
+  font-size: 11px;
   text-transform: uppercase;
   font-weight: 100;
   color:rgb(228, 204, 144);
@@ -116,7 +120,25 @@ legend {
 .episode-box{
   width:auto;
 }
-.details-right{
+.details-left{
+  font-size: 40px;
   width:300px;
  margin-left: 0;
+ z-index: 5;
+ padding-bottom:20px;
+}
+.favorite-star {
+  font-size: 24px; /* Adjust the font size to make it larger */
+  border-radius: 50%; /* Apply rounded edges */
+  color: white;
+}
+@media screen and (max-width: 768px) {
+.movie-details{
+  height: 100vh;
+  flex-direction: column;
+}
+.details-left{
+  width:80%;
+  font-size:20px ;
+}
 }

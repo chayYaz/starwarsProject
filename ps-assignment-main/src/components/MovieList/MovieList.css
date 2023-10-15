@@ -1,9 +1,4 @@
-/* .movie-list-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto; 
-} */
+
 
 .movie-list {
   display: flex;
@@ -12,5 +7,13 @@
   /* max-width: 1200px; */
   justify-content: space-between; 
   height:35vh;
+  z-index: 1;
+  position: relative;
 
+}
+@media screen and (max-width: 768px) {
+  .movie-list{
+    height:auto;
+    flex-direction: column;
+  }
 }

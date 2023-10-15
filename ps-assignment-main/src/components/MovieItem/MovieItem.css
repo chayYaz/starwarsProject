@@ -37,4 +37,10 @@
   backdrop-filter: blur(4px); /* Apply blur effect */
 }
 
-/* Add any additional styling or adjustments as needed */
+@media screen and (max-width: 768px) {
+  .movie-item{
+    width: 80%;
+    height:300px;
+    margin: 20px 0;
+  }
+}
