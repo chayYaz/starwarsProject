@@ -65,6 +65,7 @@ Please notice the the SWAPI API might take some time to respond
    mockup did not have buttton
    images were not in the html
    star/heart did not appear in html/js
+   I also added a component to change numbers to the roman number.
 2. **Styling:**
 
    - Refactor the application's styling to match the provided [mockup](page_mockup.png)

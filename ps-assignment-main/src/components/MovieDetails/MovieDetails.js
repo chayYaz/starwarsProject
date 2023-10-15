@@ -5,13 +5,10 @@ import { arabicToRoman } from '../../Utils/RomanNumbers';
 
 
 function MovieDetails({ movie, onFavoriteToggle, favorites, movieImage }) {
-  const isInitialFavorite = favorites.some((fav) => fav.episode_id === movie.episode_id);
+  const isInitialFavorite = movie ? favorites.some((fav) => fav.episode_id === movie.episode_id) : false;
   const [isFavorite, setIsFavorite] = useState(isInitialFavorite);
 
-  const backgroundImageStyle = {
-    backgroundImage: `url(${movieImage})`,
-    zIndex: 1,
-  };
+  
 
   const handleFavoriteToggle = () => {
     onFavoriteToggle(movie);
@@ -19,7 +16,10 @@ function MovieDetails({ movie, onFavoriteToggle, favorites, movieImage }) {
   };
 
   return movie ? (
-    <div className="movie-details" style={backgroundImageStyle}>
+    <div className="movie-details" style={{
+      backgroundImage: `url(${movieImage})`,
+      zIndex: 1,
+    }}>
       <div className="details-left">
         <h2 className="title-details">{movie.title}</h2>
         <div className="episode-box">
@@ -37,7 +37,7 @@ function MovieDetails({ movie, onFavoriteToggle, favorites, movieImage }) {
         </button>
         </div>
     </div>
-  ) : null;
+  ) : <div className='movie-details'></div>;
 }
 
 export default MovieDetails;

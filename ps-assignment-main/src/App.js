@@ -16,7 +16,7 @@ function App() {
 
   const initialFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const [favorites, setFavorites] = useState(initialFavorites);
-  const [selectedMovie, setSelectedMovie] = useState({episode_id:1,title:"The Phantom Menace"});
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites));
@@ -43,15 +43,15 @@ function App() {
     5: EmpireStrikesBack,
     6: ReturnOfTheJedi,
   };
-  const backgroundImageStyle = {
-    backgroundImage: `url(${movieImages[selectedMovie.episode_id]})`,
-    backgroundSize: 'cover',
-
-  };
+ 
   return (
-    <div className="for-background" style={backgroundImageStyle}>
+    <div className="for-background" style={{
+      backgroundImage: `url(${movieImages[selectedMovie?selectedMovie.episode_id:1]})`,
+      backgroundSize: 'cover',
+  
+    }}>
     <div className="App">
-      <MovieDetails movie={selectedMovie} favorites={favorites} onFavoriteToggle={handleFavorite} movieImage={movieImages[selectedMovie.episode_id]}/>
+      <MovieDetails movie={selectedMovie} favorites={favorites} onFavoriteToggle={handleFavorite} movieImage={movieImages[selectedMovie?selectedMovie.episode_id:1]}/>
       <MovieList onMovieSelect={handleMovieSelect} movieImages={movieImages} />
     </div>
     </div>

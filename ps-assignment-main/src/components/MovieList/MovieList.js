@@ -12,6 +12,7 @@ function MovieList({ onMovieSelect,movieImages }) {
       try {
         const data = await fetchMovies();
         setMovies(data);
+        onMovieSelect(data[0])
       } catch (error) {
         console.error("Failed fetching movies:", error);
       } finally {
@@ -20,6 +21,7 @@ function MovieList({ onMovieSelect,movieImages }) {
     }
 
     getMovies();
+  
   }, []);
 
   return (
