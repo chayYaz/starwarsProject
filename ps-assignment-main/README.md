@@ -58,10 +58,10 @@ Please notice the the SWAPI API might take some time to respond
    this is the solution: Just add movie as a parameter sent to onMovieSelect:
    onClick={() => onMovieSelect(movie)}
    problem number 2:
-   the function prop was not passed to moviedetails properly.
+   The function prop was not passed to moviedetails properly in App.
    this is the solution to the problem:
    <MovieDetails movie={selectedMovie} favorites={favorites} onFavoriteToggle={handleFavorite}/>
-   additional problems:
+   Additional problems:
    mockup did not have buttton
    images were not in the html
    star/heart did not appear in html/js
