@@ -23,8 +23,7 @@ function MovieList({ onMovieSelect,movieImages }) {
   }, []);
 
   return (
-    // <div className="movie-list-container">
-      //{
+    
         isLoading ? (
         <Loading message="Loading Movies..." />
       ) : (
@@ -39,8 +38,7 @@ function MovieList({ onMovieSelect,movieImages }) {
           
         </div>
       )
-    //}
-    // </div>
+    
   );
 }
 

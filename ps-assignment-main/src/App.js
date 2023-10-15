@@ -6,7 +6,7 @@ import  ThePhantomMenace from './Images/ThePhanthomMenace.jpg';
 import RevengeOfTheSith from './Images/RevengeOfTheSith.jpg';
 import EmpireStrikesBack from "./Images/empire-strikes-back.jpg";
 import ReturnOfTheJedi from "./Images/Return-of-the-Jedi.jpg";
-// import AtackOfTheClones from "./Images/AtackOfTheClones.jpg";
+
 import AtackOfTheClones2 from "./Images/attackoftheclones.jfif";
 import ANewHope from "./Images/ANewHope2.jpg";
 

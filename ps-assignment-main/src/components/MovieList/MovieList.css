@@ -4,7 +4,6 @@
   display: flex;
   width: auto; /* Allow items to expand horizontally */
   align-items: center;
-  /* max-width: 1200px; */
   justify-content: space-between; 
   height:35vh;
   z-index: 1;

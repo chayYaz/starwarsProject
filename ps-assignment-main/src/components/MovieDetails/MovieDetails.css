@@ -10,11 +10,10 @@
   z-index: -1;
   border-radius: 10px;
 }
-/* MovieDetails.css */
+
 .movie-details {
   position: relative;
   background-size: cover;
-  /* background-position: top; */
   background-position: 70% 20%;
   height: 50vh; /* Set a specific height value */
   text-align: center;
@@ -57,7 +56,7 @@ legend {
   font-family: 'Orbitron', sans-serif;
   font-size: 10px;
   font-weight: 900;
-  color: white; /* Bright white gold */
+  color: white; 
   text-transform: uppercase;
   text-align: left;
 }
@@ -75,15 +74,15 @@ legend {
   text-align: left;
 }
 
-/* Add these styles to your MovieDetails.css */
+
 .movie-details button {
   width:100px;
-  background-color: #FFD700; /* Bright white gold */
+  background-color: #FFD700; /* Bright  gold */
   color: black; /* Change text color to black */
   border: none;
   padding: 10px 20px;
   font-size: 18px;
-  border-radius: 10px; /* Add border radius */
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* Add shadow */
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
@@ -112,8 +111,7 @@ background-color: #ffe448;
   text-transform: uppercase;
   font-weight: 100;
   color:rgb(228, 204, 144);
-  /* text-align: justify;
-	text-align-last: justify; */
+ 
 	letter-spacing: 0.2rem;
 }
 .episode-box{
@@ -127,8 +125,7 @@ background-color: #ffe448;
  padding-bottom:40px;
 }
 .favorite-star {
-  font-size: 24px; /* Adjust the font size to make it larger */
-  border-radius: 50%; /* Apply rounded edges */
+  font-size: 24px; 
   color: white;
 }
 @media screen and (max-width: 768px) {

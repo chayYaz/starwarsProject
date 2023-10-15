@@ -1,5 +1,5 @@
 import React from 'react';
-// import myImage from '../../bg.jpg';
+
 import './MovieItem.css';
 
 function MovieItem({ movie, onMovieSelect,movieImage }) {
