@@ -17,10 +17,14 @@ These instructions will help you set up the project locally on your machine.
 
 ### Installing
 
-git clone https://github.com/chayYaz/starwarsProject.git  
+git clone https://github.com/chayYaz/starwarsProject.git 
+
 cd starwarsproject
+
 cd ps-assignment-main
+
 npm install
+
 npm start
    ```
 
